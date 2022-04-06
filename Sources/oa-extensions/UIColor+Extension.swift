@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UIColor {
+extension UIColor {
     
     static func random() -> UIColor {
         return UIColor(
