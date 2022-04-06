@@ -1,24 +1,24 @@
 //
 //  Collection+Extension.swift
-//  Bikevo
+//  oa-extensions
 //
-//  Created by Osvaldo Pirrello on 16/12/21.
+//  Created by Osvaldo Pirrello on 06/04/22.
 //  Copyright © 2021 OverApp. All rights reserved.
 //
 
 import Foundation
 
-extension Collection where Element: BinaryInteger {
+public extension Collection where Element: BinaryInteger {
     /// Returns the average of all elements in the array
     func average() -> Element { isEmpty ? .zero : sum() / Element(count) }
 }
 
-extension Collection where Element == Double {
+public extension Collection where Element == Double {
     /// Returns the average of all elements in the array
     func average() -> Double { isEmpty ? 0.0 : sum() / Double(count) }
 }
 
-extension Collection where Element == Double {
+public extension Collection where Element == Double {
     /// Returns the average of all elements in the array
     func averageNotZeros() -> Double {
         if isEmpty { return 0.0 }

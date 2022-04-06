@@ -1,14 +1,14 @@
 //
 //  Date+Extension.swift
-//  Bikevo
+//  oa-extensions
 //
-//  Created by Osvaldo Pirrello on 26/02/21.
+//  Created by Osvaldo Pirrello on 06/04/22.
 //  Copyright © 2021 OverApp. All rights reserved.
 //
 
 import Foundation
 
-extension Date {
+public extension Date {
     
     // MARK: - Convert from String
     
@@ -790,7 +790,7 @@ public enum DateFormatType {
     }
 }
 
-extension DateFormatType: Equatable {
+public extension DateFormatType: Equatable {
     public static func == (lhs: DateFormatType, rhs: DateFormatType) -> Bool {
         switch (lhs, rhs) {
         case (.custom(let lhsString), .custom(let rhsString)):

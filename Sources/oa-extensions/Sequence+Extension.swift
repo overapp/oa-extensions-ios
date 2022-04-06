@@ -1,8 +1,8 @@
 //
 //  Sequence+Extension.swift
-//  Bikevo
+//  oa-extensions
 //
-//  Created by Osvaldo Pirrello on 16/12/21.
+//  Created by Osvaldo Pirrello on 06/04/22.
 //  Copyright © 2021 OverApp. All rights reserved.
 //
 
