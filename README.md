@@ -1,3 +1,3 @@
 # oa-extensions
 
-A description of this package.
+The OverApp iOS Extensions Package.
