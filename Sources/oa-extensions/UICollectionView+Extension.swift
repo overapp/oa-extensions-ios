@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UICollectionView {
+public extension UICollectionView {
     
     func register<T: UICollectionViewCell>(_ type: T.Type) {
         // Get class name

@@ -660,7 +660,7 @@ public extension Date {
             return numberFormatter
         }
         
-        public func cachedFormatter(_ format: String = DateFormatType.standard.stringFormat,
+        func cachedFormatter(_ format: String = DateFormatType.standard.stringFormat,
                                     timeZone: Foundation.TimeZone = Foundation.TimeZone.current,
                                     locale: Locale = Locale.current, isLenient: Bool = true) -> DateFormatter {
             
@@ -680,7 +680,7 @@ public extension Date {
         
         /// Generates a cached formatter based on the provided date style, time style and relative date.
         /// Formatters are cached in a singleton array using hashkeys.
-        public func cachedFormatter(_ dateStyle: DateFormatter.Style, timeStyle: DateFormatter.Style, doesRelativeDateFormatting: Bool, timeZone: Foundation.TimeZone = Foundation.NSTimeZone.local, locale: Locale = Locale.current, isLenient: Bool = true) -> DateFormatter {
+        func cachedFormatter(_ dateStyle: DateFormatter.Style, timeStyle: DateFormatter.Style, doesRelativeDateFormatting: Bool, timeZone: Foundation.TimeZone = Foundation.NSTimeZone.local, locale: Locale = Locale.current, isLenient: Bool = true) -> DateFormatter {
             let hashKey = "\(dateStyle.hashValue)\(timeStyle.hashValue)\(doesRelativeDateFormatting.hashValue)\(timeZone.hashValue)\(locale.hashValue)"
             if Date.cachedDateFormatters.retrieve(hashKey: hashKey) == nil {
                 let formatter = DateFormatter()
@@ -696,7 +696,7 @@ public extension Date {
             return Date.cachedDateFormatters.retrieve(hashKey: hashKey)!
         }
         
-        public func cachedNumberFormatter() -> NumberFormatter {
+        func cachedNumberFormatter() -> NumberFormatter {
             return Date.cachedDateFormatters.retrieve()
         }
         
@@ -790,7 +790,7 @@ public enum DateFormatType {
     }
 }
 
-public extension DateFormatType: Equatable {
+extension DateFormatType: Equatable {
     public static func == (lhs: DateFormatType, rhs: DateFormatType) -> Bool {
         switch (lhs, rhs) {
         case (.custom(let lhsString), .custom(let rhsString)):

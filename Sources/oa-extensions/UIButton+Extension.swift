@@ -11,9 +11,9 @@ import UIKit
 /**
  https://stackoverflow.com/questions/17800288/autolayout-intrinsic-size-of-uibutton-does-not-include-title-insets
  */
-extension UIButton {
+public extension UIButton {
     
-    open override var intrinsicContentSize: CGSize {
+    override var intrinsicContentSize: CGSize {
         // Get instrinsic content size
         let intrinsicContentSize = super.intrinsicContentSize
         // Adjusted width and height

@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UITableViewCell {
+public extension UITableViewCell {
     
     var outerTableView: UITableView? {
         return self.next(of: UITableView.self)

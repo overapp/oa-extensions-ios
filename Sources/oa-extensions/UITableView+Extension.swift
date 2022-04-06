@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UITableView {
+public extension UITableView {
     
     func register<T: UITableViewCell>(_ type: T.Type) {
         // Get class name

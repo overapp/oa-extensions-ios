@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension String {
+public extension String {
     
     /// Localized string
     var localized: String {
@@ -47,7 +47,7 @@ extension String {
     }
     
     /// Returns an array of strings at new lines.
-    public func lines() -> [String] {
+    func lines() -> [String] {
         components(separatedBy: .newlines)
     }
     
@@ -95,7 +95,7 @@ extension String {
     /**
      Default toFormattedDate conversion
      */
-    public func toString(format: DateFormatType) -> String? {
+    func toString(format: DateFormatType) -> String? {
         return Date(fromString: self, format: .isoDate)?.toString(format: format)
     }
     

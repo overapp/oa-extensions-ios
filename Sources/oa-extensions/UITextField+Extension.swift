@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UITextField {
+public extension UITextField {
     
     var hasPlaceholder: Bool {
         return placeholder?.isEmpty == false

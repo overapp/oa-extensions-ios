@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIStoryboard {
+public extension UIStoryboard {
     
     func instantiate<T: UIViewController>() -> T? {
         // Get class name

@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension TimeInterval {
+public extension TimeInterval {
     
     var workoutTime: String {
         hour>0 ? String(format:"%02dh%02d'%02d.%02d", hour, minute, second, millisecond/100) : String(format:"%02d'%02d.%02d", minute, second, millisecond/100)

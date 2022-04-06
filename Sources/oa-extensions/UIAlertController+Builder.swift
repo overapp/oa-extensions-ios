@@ -25,7 +25,7 @@ import UIKit
  *    .addOkAction()
  *    .show(in: UIViewController) OR .build() to get back the UIAlertController directly
  */
-extension UIAlertController {
+public extension UIAlertController {
 
     static func okAlert(withTitle title: String? = nil, withMessage message: String? = nil) -> UIAlertController.Builder {
         return UIAlertController.Builder()

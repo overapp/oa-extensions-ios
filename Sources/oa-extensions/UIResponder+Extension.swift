@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIResponder {
+public extension UIResponder {
     /**
      * Returns the next responder in the responder chain cast to the given type, or
      * if nil, recurses the chain until the next responder is nil or castable.
