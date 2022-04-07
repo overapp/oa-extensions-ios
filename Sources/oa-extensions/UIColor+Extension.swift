@@ -3,7 +3,7 @@
 //  oa-extensions
 //
 //  Created by Osvaldo Pirrello on 06/04/22.
-//  Copyright © 2021 OverApp. All rights reserved.
+//  Copyright © 2022 OverApp. All rights reserved.
 //
 
 import UIKit
@@ -59,7 +59,7 @@ public extension UIColor {
             alpha: alpha)
     }
     
-    public var hex: String {
+    var hex: String {
         var red: CGFloat = 0
         var green: CGFloat = 0
         var blue: CGFloat = 0
